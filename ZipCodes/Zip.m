@@ -23,6 +23,7 @@ static NSString * const ZipStateKey = @"state";
         self.zip = [dictionary[ZipZipKey] integerValue];
         self.city = dictionary[ZipCityKey];
         self.state = dictionary[ZipStateKey];
+        self.population = [dictionary[ZipPopulationKey] integerValue];
         
         double latitude = [dictionary[ZipCoordinatesKey][0] doubleValue];
         double longitude = [dictionary[ZipCoordinatesKey][1] doubleValue];

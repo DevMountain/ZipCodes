@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 #import "ZipCodeController.h"
+#import "DetailViewController.h"
 
 @interface ViewController () <UITableViewDataSource>
 
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -20,15 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Zip Codes";
 
-    self.tableView = [UITableView new];
-    self.tableView.frame = self.view.frame;
-    self.tableView.dataSource = self;
-    
-    [self.view addSubview:self.tableView];
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"zipCell"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -44,6 +37,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [ZipCodeController sharedInstance].zipCodes.count;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    Zip *zip = [ZipCodeController sharedInstance].zipCodes[indexPath.row];
+    
+    DetailViewController *detailViewController = segue.destinationViewController;
+    
+    detailViewController.zip = zip;
 }
 
 - (void)didReceiveMemoryWarning {

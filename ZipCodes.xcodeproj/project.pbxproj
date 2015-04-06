@@ -17,6 +17,7 @@
 		680565171AD23A87008BABFC /* zips.json in Resources */ = {isa = PBXBuildFile; fileRef = 680565161AD23A87008BABFC /* zips.json */; };
 		6805651A1AD23A9F008BABFC /* ZipCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680565191AD23A9F008BABFC /* ZipCodeController.m */; };
 		6805651D1AD23AB8008BABFC /* Zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 6805651C1AD23AB8008BABFC /* Zip.m */; };
+		681E22341AD248D200C9CD73 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681E22331AD248D200C9CD73 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		680565191AD23A9F008BABFC /* ZipCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipCodeController.m; sourceTree = "<group>"; };
 		6805651B1AD23AB8008BABFC /* Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zip.h; sourceTree = "<group>"; };
 		6805651C1AD23AB8008BABFC /* Zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zip.m; sourceTree = "<group>"; };
+		681E22321AD248D200C9CD73 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		681E22331AD248D200C9CD73 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				680565191AD23A9F008BABFC /* ZipCodeController.m */,
 				680564F71AD23A7C008BABFC /* ViewController.h */,
 				680564F81AD23A7C008BABFC /* ViewController.m */,
+				681E22321AD248D200C9CD73 /* DetailViewController.h */,
+				681E22331AD248D200C9CD73 /* DetailViewController.m */,
 				680564FA1AD23A7C008BABFC /* Main.storyboard */,
 				680564FD1AD23A7C008BABFC /* Images.xcassets */,
 				680564FF1AD23A7C008BABFC /* LaunchScreen.xib */,
@@ -238,6 +243,7 @@
 				6805651D1AD23AB8008BABFC /* Zip.m in Sources */,
 				680564F61AD23A7C008BABFC /* AppDelegate.m in Sources */,
 				680564F31AD23A7C008BABFC /* main.m in Sources */,
+				681E22341AD248D200C9CD73 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +434,7 @@
 				680565121AD23A7C008BABFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		680565131AD23A7C008BABFC /* Build configuration list for PBXNativeTarget "ZipCodesTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				680565151AD23A7C008BABFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
