@@ -14,6 +14,9 @@
 		680564FE1AD23A7C008BABFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680564FD1AD23A7C008BABFC /* Images.xcassets */; };
 		680565011AD23A7C008BABFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680564FF1AD23A7C008BABFC /* LaunchScreen.xib */; };
 		6805650D1AD23A7C008BABFC /* ZipCodesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6805650C1AD23A7C008BABFC /* ZipCodesTests.m */; };
+		680565171AD23A87008BABFC /* zips.json in Resources */ = {isa = PBXBuildFile; fileRef = 680565161AD23A87008BABFC /* zips.json */; };
+		6805651A1AD23A9F008BABFC /* ZipCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680565191AD23A9F008BABFC /* ZipCodeController.m */; };
+		6805651D1AD23AB8008BABFC /* Zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 6805651C1AD23AB8008BABFC /* Zip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		680565061AD23A7C008BABFC /* ZipCodesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipCodesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6805650B1AD23A7C008BABFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6805650C1AD23A7C008BABFC /* ZipCodesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipCodesTests.m; sourceTree = "<group>"; };
+		680565161AD23A87008BABFC /* zips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zips.json; sourceTree = "<group>"; };
+		680565181AD23A9F008BABFC /* ZipCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipCodeController.h; sourceTree = "<group>"; };
+		680565191AD23A9F008BABFC /* ZipCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipCodeController.m; sourceTree = "<group>"; };
+		6805651B1AD23AB8008BABFC /* Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zip.h; sourceTree = "<group>"; };
+		6805651C1AD23AB8008BABFC /* Zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +91,16 @@
 			children = (
 				680564F41AD23A7C008BABFC /* AppDelegate.h */,
 				680564F51AD23A7C008BABFC /* AppDelegate.m */,
+				6805651B1AD23AB8008BABFC /* Zip.h */,
+				6805651C1AD23AB8008BABFC /* Zip.m */,
+				680565181AD23A9F008BABFC /* ZipCodeController.h */,
+				680565191AD23A9F008BABFC /* ZipCodeController.m */,
 				680564F71AD23A7C008BABFC /* ViewController.h */,
 				680564F81AD23A7C008BABFC /* ViewController.m */,
 				680564FA1AD23A7C008BABFC /* Main.storyboard */,
 				680564FD1AD23A7C008BABFC /* Images.xcassets */,
 				680564FF1AD23A7C008BABFC /* LaunchScreen.xib */,
+				680565161AD23A87008BABFC /* zips.json */,
 				680564F01AD23A7C008BABFC /* Supporting Files */,
 			);
 			path = ZipCodes;
@@ -202,6 +215,7 @@
 				680564FC1AD23A7C008BABFC /* Main.storyboard in Resources */,
 				680565011AD23A7C008BABFC /* LaunchScreen.xib in Resources */,
 				680564FE1AD23A7C008BABFC /* Images.xcassets in Resources */,
+				680565171AD23A87008BABFC /* zips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6805651A1AD23A9F008BABFC /* ZipCodeController.m in Sources */,
 				680564F91AD23A7C008BABFC /* ViewController.m in Sources */,
+				6805651D1AD23AB8008BABFC /* Zip.m in Sources */,
 				680564F61AD23A7C008BABFC /* AppDelegate.m in Sources */,
 				680564F31AD23A7C008BABFC /* main.m in Sources */,
 			);
